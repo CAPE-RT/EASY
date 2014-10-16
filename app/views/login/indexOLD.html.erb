@@ -1,0 +1,32 @@
+<!-- page title -->
+<% @title="CAPE{RT}:LOGIN" %>
+
+<!-- page body -->
+<div class="block absolute-center">
+<div class="absolute-center h3 p2">
+	CAPE<sup>{RT}</sup> | Computer-Aided Production Environment
+</div>
+<div class="bg-darken-1 border rounded p1">
+	<div id="login" class="absolute-center h4">
+			<form name="login" action="/" onsubmit="/" method="post">
+				<label>MyID:</label> <input type="text" name="myid" autofocus class="field-light">
+				<br class="md-hide">
+				<label>Password:</label> <input type="password" name="password" class="field-light"><br />
+				<input type="submit" class="hide" />
+			</form>
+	</div>
+	<div class="absolute-center h5">
+		<a id="modal_trigger" class="button button-blue m1" href="#modal">Reset Password</a>
+		<a id="modal_trigger" class="button button-blue m1" href="#modal">Request New Account</a><br />
+	</div>	
+</div>
+	<div class="right h6">
+		A NG FabLab Innovation <i class="fa fa-rocket"></i>
+	</div>
+	<div class="left h6">
+		<i class="fa fa-heart-o"></i> 0.8.0
+	</div>
+</div>
+
+<!-- Login Options Overlay -->
+<%= render partial: "login_options" %>

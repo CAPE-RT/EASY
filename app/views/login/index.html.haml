@@ -1,0 +1,37 @@
+/ page title
+- @title="CAPE{RT}:LOGIN"
+/ page body
+%br.sm-show/
+%br.sm-show/
+.block.bg-darken-4.border.p2
+  .absolute-center.title-font.h2.p1.white
+    CAPE
+    %sup> {RT}
+    %span= h(" | Computer-Aided Production Environment")
+  .white
+    .p1.h4
+      %form.absolute-center{:action => "/", :method => "post", :name => "login", :onsubmit => "/"}
+        %label MyID:
+        %br.sm-hide/
+        %input.field-light.width-200.m1{:autofocus => "", :name => "myid", :type => "text"}/
+        %br.sm-hide/
+        %label Password:
+        %br.sm-hide/
+        %input.field-light.width-200.m1{:name => "password", :type => "password"}/
+        %br/
+        %br/
+        %input.button.button-blue.absolute-center{:value => "LOGIN", :type => "submit"}/
+    .absolute-center.h4.lighter-gray.p1
+      %i.fa.fa-lock
+      %a#modal_trigger.lighter-gray{:href => "#modal"} Reset Password
+      \&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      %i.fa.fa-user
+      %a#modal_trigger.lighter-gray{:href => "#modal"} Request New Account
+  .left.h5.mt2.dark-gray
+    %i.fa.fa-heart-o
+    0.8.0 | About
+  .right.h5.mt2.dark-gray
+    A NG FabLab Innovation
+    %i.fa.fa-rocket
+/ Login Options Overlay
+= render partial: "login_options"
