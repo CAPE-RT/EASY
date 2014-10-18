@@ -3,21 +3,19 @@
 // You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready(function(){
 
-  $('.title').hover(
-  	function(){
-  		$('.title-desc').fadeIn(500);
-  	}, 
-  	function(){
-  		$('.title-desc').fadeOut(500);
-  	}
-  );
-    $("#modal_trigger").leanModal({top: 0, closeButton: ".modal_close" });
-    
-    // Calling Register Form
-    $("#register_form").click(function () {
-        $(".social_login").hide();
-        $(".user_register").show();
-        $(".header_title").text('Register');
-        return false;
-    });
+new jBox('Modal', {
+    width: 300,
+    height: 200,
+    attach: $('#myModal'),
+    title: '<span class="h3">Reset CAPE Password</span>',
+    content: $('#grab_me')
+});
+new jBox('Modal', {
+    width: 300,
+    height: 200,
+    attach: $('#myModal2'),
+    title: '<span class="h3">Request New Account</span>',
+    content: $('#grab_me_2')
+});
+
 });

@@ -41,6 +41,10 @@ font-style: normal;
 .bg-sky-blue {
   background-color: #c9dbe9;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
 /*
     End Custom Section
 */
@@ -585,8 +589,9 @@ td {
   }
 }
 
+/* Removed !important */
 .display-none {
-  display: none !important;
+  display: none;
 }
 
 .hide {
