@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'font-awesome-sass', '~> 4.2.0'
 gem 'haml'
+gem 'couchbase', '~> 1.3.10'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'

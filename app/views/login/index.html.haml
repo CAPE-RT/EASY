@@ -11,13 +11,11 @@
   .white
     .p1.h4
       %form.absolute-center{:action => "/", :method => "post", :name => "login", :onsubmit => "/"}
-        %label MyID:
         %br.sm-hide/
-        %input.field-light.width-200.m1{:autofocus => "", :name => "myid", :type => "text"}/
+        %input.field-light.width-200.m1{:autofocus => "", :name => "myid", :type => "text", :placeholder => "MyID"}/
         %br.sm-hide/
-        %label Password:
         %br.sm-hide/
-        %input.field-light.width-200.m1{:name => "password", :type => "password"}/
+        %input.field-light.width-200.m1{:name => "password", :type => "password", :placeholder => "Password"}/
         %br/
         %br/
         %input.button.button-blue.absolute-center{:value => "LOGIN", :type => "submit"}/
@@ -28,8 +26,8 @@
       %i.fa.fa-user
       %a#modal_trigger.lighter-gray{:href => "#modal"} Request New Account
   .left.h5.mt2.dark-gray
-    %i.fa.fa-heart-o
-    0.8.0 | About
+    %i.fa.fa-globe
+    Good Hope | About
   .right.h5.mt2.dark-gray
     A NG FabLab Innovation
     %i.fa.fa-rocket
