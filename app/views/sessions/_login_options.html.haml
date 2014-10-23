@@ -1,4 +1,4 @@
-#grab_me.display-none
+#reset_password_content.display-none
 	.p1.h4
 		%form.absolute-center{:action => "/", :method => "post", :name => "login", :onsubmit => "/"}
 			%input.field-light.width-200.m1{:autofocus => "", :name => "myid", :type => "text", :placeholder => "MyID"}/
@@ -7,5 +7,9 @@
 			%br/
 			%br/
 			%input.button.button-red.absolute-center{:value => "Reset Password", :type => "submit"}/
-#grab_me_2.display-none.h4.overflow-hidden
+#request_account_content.display-none.h4.overflow-hidden
 	Let Me In!
+#about_popup_content.display-none.h4.overflow-hidden
+	VERSION:
+	%a{:href => "http://en.wikipedia.org/wiki/Cape_of_Good_Hope", :target => "_blank"} Good Hope
+	(pre-production, 0.8.0)

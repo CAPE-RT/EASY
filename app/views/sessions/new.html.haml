@@ -21,13 +21,15 @@
         %input.button.button-blue.absolute-center{:value => "LOGIN", :type => "submit"}/
     .absolute-center.h4.lighter-gray.p1
       %i.fa.fa-lock
-      %span#myModal.lighter-gray.cursor-pointer Reset Password
+      %span#reset_password.lighter-gray.cursor-pointer Reset Password
       \&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       %i.fa.fa-user
-      %span#myModal2.lighter-gray.cursor-pointer Request New Account
+      %span#request_account.lighter-gray.cursor-pointer Request New Account
   .left.h5.mt2.dark-gray
     %i.fa.fa-heart-o
-    Good Hope | About
+    %span= h("Good Hope | ")
+    %span#about_popup.cursor-pointer 
+      %u About
   .right.h5.mt2.dark-gray
     A NG FabLab Innovation
     %i.fa.fa-rocket

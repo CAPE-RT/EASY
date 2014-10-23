@@ -6,16 +6,23 @@ $(document).ready(function(){
 new jBox('Modal', {
     width: 300,
     height: 220,
-    attach: $('#myModal'),
+    attach: $('#reset_password'),
     title: '<span class="h3">Reset CAPE Password</span>',
-    content: $('#grab_me')
+    content: $('#reset_password_content')
 });
 new jBox('Modal', {
     width: 300,
     height: 220,
-    attach: $('#myModal2'),
+    attach: $('#request_account'),
     title: '<span class="h3">Request New Account</span>',
-    content: $('#grab_me_2')
+    content: $('#request_account_content')
+});
+new jBox('Modal', {
+    width: 400,
+    height: 220,
+    attach: $('#about_popup'),
+    title: '<span class="h3">CAPE<sup>{RT}</sup> :: About</span>',
+    content: $('#about_popup_content')
 });
 
 });
