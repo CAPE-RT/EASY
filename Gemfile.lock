@@ -28,6 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.7)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -41,6 +42,9 @@ GEM
       connection_pool (>= 1.0.0, <= 3.0.0)
       multi_json (~> 1.0)
       yaji (~> 0.3, >= 0.3.2)
+    couchbase-model (0.5.4)
+      activemodel
+      couchbase (~> 1.3.3)
     erubis (2.7.0)
     execjs (2.2.1)
     font-awesome-sass (4.2.0)
@@ -127,9 +131,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   coffee-rails (~> 4.0.0)
-  couchbase (~> 1.3.10)
-  font-awesome-sass (~> 4.2.0)
+  couchbase
+  couchbase-model
+  font-awesome-sass
   haml
   jbuilder (~> 2.0)
   jquery-rails

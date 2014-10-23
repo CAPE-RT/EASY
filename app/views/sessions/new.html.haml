@@ -9,13 +9,13 @@
     %sup> {RT}
     %span= h(" | Computer-Aided Production Environment")
   .white
-    .p1.h4
-      %form.absolute-center{:action => "/", :method => "post", :name => "login", :onsubmit => "/"}
+    .p1.h4.absolute-center
+      =form_tag sessions_path do
         %br.sm-hide/
-        %input.field-light.width-200.m1{:autofocus => "", :name => "myid", :type => "text", :placeholder => "MyID"}/
+        = text_field_tag :myid, params[:myid], placeholder: 'MyID', autofocus: '', :class => 'field-light width-200 m1'
         %br.sm-hide/
         %br.sm-hide/
-        %input.field-light.width-200.m1{:name => "password", :type => "password", :placeholder => "Password"}/
+        = password_field_tag :password, nil, :placeholder => 'Password', :class => 'field-light width-200 m1'
         %br/
         %br/
         %input.button.button-blue.absolute-center{:value => "LOGIN", :type => "submit"}/

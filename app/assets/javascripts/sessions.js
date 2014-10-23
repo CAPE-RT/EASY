@@ -5,14 +5,14 @@ $(document).ready(function(){
 
 new jBox('Modal', {
     width: 300,
-    height: 200,
+    height: 220,
     attach: $('#myModal'),
     title: '<span class="h3">Reset CAPE Password</span>',
     content: $('#grab_me')
 });
 new jBox('Modal', {
     width: 300,
-    height: 200,
+    height: 220,
     attach: $('#myModal2'),
     title: '<span class="h3">Request New Account</span>',
     content: $('#grab_me_2')
