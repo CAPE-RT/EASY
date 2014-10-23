@@ -15,7 +15,7 @@ test:
 
 stage:
   <<: *common
-  bucket: capert_stage
+  bucket: cape-rt
 
 # set these environment variables on your production server
 production:
