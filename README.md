@@ -6,9 +6,14 @@
 <p><b><u>Y</u></b>ours - <i>user-developed. user-driven. period.</i></p>
 <h6><u>Front-End:</u></h6>
 <ul>
-  <li>BassCss
-  <li>FontAwesome
-  <li>Backbone.js
-  <li>HAML
+  <li><a href="http://www.basscss.com/" target="_blank">BassCss</a>
+  <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a>
+  <li><a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
+  <li><a href="http://haml.info/" target="_blank">HAML</a>
+</ul>
+<h6><u>Back-End:</u></h6>
+<ul>
+  <li>Ruby on Rails
+  <li>Couchbase
 </ul>
 ====
