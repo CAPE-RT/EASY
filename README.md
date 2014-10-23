@@ -13,7 +13,7 @@
 </ul>
 <h6><u>Back-End:</u></h6>
 <ul>
-  <li>Ruby on Rails
-  <li>Couchbase
+  <li><a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>
+  <li><a href="http://www.couchbase.com/" target="_blank">Couchbase</a>
 </ul>
 ====
