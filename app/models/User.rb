@@ -1,16 +1,18 @@
+require 'bcrypt'
 require 'couchbase/model'
 
 class User < Couchbase::Model
-	attribute :myid, :password, :password_confirmation
+  #include ActiveRecord::SecurePassword
+  #include BCrypt
+  attribute :myid, :password, :password_confirmation, :first_name, :last_name
   
-  attr_accessor :password
-  before_save :encrypt_password
+  #has_secure_password
   
-  validates_confirmation_of :password
-  validates_presence_of :password, :on => :create
-  validates_presence_of :myid
-  #validates_uniqueness_of :email
-  
+  attr_accessor :myid, :password, :password_confirmation
+  validates :password, confirmation: true, presence: true
+  validates :password_confirmation, presence: true
+  #before_save :encrypt_password
+
   def self.authenticate(myid, password)
     user = User.find(myid)
     if user.myid && user.password == password
@@ -19,13 +21,12 @@ class User < Couchbase::Model
       nil
     end
   end
-  
-  #def encrypt_password
-  #  if password.present?
-   #   self.password_salt = BCrypt::Engine.generate_salt
-    #  self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
-    #end
-  #Send
+
+  private
+  def encrypt_password
+    self.hashed_password = BCrypt::Password.create(@password)
+  end
+
 end
 
 #p = User.new(:id => 'test28', :title => 'hello', :body => 'yo')

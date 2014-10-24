@@ -14,7 +14,9 @@
 			%span.md-show= h(" | Project Selection")
 		.table-cell.right-align.h4
 			%i.fa.fa-user
-			Jack Northrop
+			= current_user.first_name
+			= current_user.last_name
+			= link_to "Log out", log_out_path
 
 .block.absolute-center.p1
 	%div

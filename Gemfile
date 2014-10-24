@@ -4,6 +4,7 @@ gem 'font-awesome-sass'
 gem 'haml'
 gem 'couchbase'
 gem 'couchbase-model'
+gem "jquery-turbolinks"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'

@@ -8,8 +8,3 @@
 		= csrf_meta_tags
 		%body{:class => "controller-#{params[:controller]}"}
 			= yield
-			%br/
-			%br/
-			= link_to "Log out", log_out_path
-			- flash.each do |name, msg|
-				= content_tag :div, msg, :id => "flash_#{name}"
