@@ -13,10 +13,24 @@
 			%sup> {RT}
 			%span.md-show= h(" | Project Selection")
 		.table-cell.right-align.h4
-			%i.fa.fa-user
-			= current_user.first_name
-			= current_user.last_name
-			= link_to "Log out", log_out_path
+			%ul.user-menu
+				%li.user-menu
+					%i.fa.fa-user
+					%span.sm-show
+						= current_user.first_name
+					%span.sm-show
+						= current_user.last_name
+					%ul.user-menu
+						%li.user-menu.user-menu-link
+							%i.fa.fa-inbox
+							Inbox
+						%li.user-menu.user-menu-link
+							%i.fa.fa-edit
+							Edit Settings
+						%li.user-menu.user-menu-link
+							%hr
+						%li.user-menu.user-menu-link
+							= link_to "<i class='fa fa-power-off'></i> Log out".html_safe, log_out_path
 
 .block.absolute-center.p1
 	%div

@@ -1,0 +1,85 @@
+ul.user-menu {
+  display: inline;
+  list-style: none;
+}
+ul.user-menu li.user-menu {
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+ul.user-menu li.user-menu ul.user-menu li.user-menu {
+	padding: 3px 5px;
+}
+
+ul.user-menu li.user-menu:hover {
+  color: #c9dbe9;
+}
+ul.user-menu li.user-menu ul.user-menu {
+  padding: 0;
+  position: absolute;
+  top: 23px;
+  right: 0;
+  width: 120px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul.user-menu li.user-menu ul.user-menu li.user-menu { 
+  background: #777; 
+  display: block; 
+  color: #fff;
+}
+ul.user-menu li.user-menu ul.user-menu li.user-menu hr {
+	background: #777;
+	color: #fff;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+ul.user-menu li.user-menu ul.user-menu li.user-menu:hover { 
+	background: #777; 
+	color: #c9dbe9;
+}
+
+.user-menu-link a {
+	display: inline-block;
+	width: 100%;
+}
+.user-menu-link a:link { 
+	color: #fff;
+	text-decoration: none;
+}
+.user-menu-link a:visited { 
+	color: #fff;
+	text-decoration: none;
+}
+.user-menu-link a:hover { 
+	color: #c9dbe9;
+	text-decoration: none;
+}
+.user-menu-link a:active { 
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.user-menu li.user-menu:hover ul.user-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
