@@ -13,35 +13,18 @@
 			%sup> {RT}
 			%span.md-show= h(" | Project Selection")
 		.table-cell.right-align.h4
-			%ul.user-menu
-				%li.user-menu
-					%i.fa.fa-user
-					%span.sm-show
-						= current_user.first_name
-					%span.sm-show
-						= current_user.last_name
-					%ul.user-menu
-						%li.user-menu.user-menu-link
-							%i.fa.fa-inbox
-							Inbox
-						%li.user-menu.user-menu-link
-							%i.fa.fa-edit
-							Edit Settings
-						%li.user-menu.user-menu-link
-							%hr
-						%li.user-menu.user-menu-link
-							= link_to "<i class='fa fa-power-off'></i> Log out".html_safe, log_out_path
+			= render partial: "user_menu"
 
 .block.absolute-center.p1
 	%div
-		.inline-block.button.button-blue-outline.bg-white.h4.p4.m1 
+		%a.inline-block.button.button-blue-outline.bg-white.h4.p4.m1.project-select-link{:href => "dashboard"}
 			.absolute-center
-				SandBox 1
+				Sandbox 1
 				%br/
 			.h5.absolute-center.p1
 				%input{:type => "checkbox"} set as default
 		.inline-block.button.button-blue-outline.bg-white.h4.p4.m1
-			.absolute-center
+			.absolute-center.project-select-link
 				Program A
 				%br/
 			.h5.absolute-center.p1

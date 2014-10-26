@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
   get "project" => "project_select#index", :as => "project"
+  get "dashboard" => "dashboard#index", :as => "dashboard"
   root :to => "sessions#new"
   resources :users
   resources :sessions

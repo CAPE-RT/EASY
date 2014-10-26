@@ -1,0 +1,18 @@
+/ page title
+- @title="CAPE{RT}:Select Project"
+/ page body
+.clearfix.top-0.bg-mid-gray.white.p1
+	.table.table-fixed
+		.table-cell.left-align.h4.italic
+			%span.sm-show
+				Content Left
+			%span.sm-hide 
+				%i.fa.fa-align-justify
+		.table-cell.center.h4.bold
+			SANDBOX 1
+			%span.md-show= h(" | Dashboard")
+			%span.cursor-pointer.workbench-menu
+				%i.fa.fa-th
+		.table-cell.right-align.h4
+			= render partial: "user_menu"
+= render partial: "workbench_menu"
