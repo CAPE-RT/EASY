@@ -4,15 +4,14 @@
 var ready = function() {
 
 new jBox('Tooltip', {
-		attach: $('.user-menu'),
-		content: $('#user-menu'),
+		attach: $('.workbench-menu'),
+		content: $('#workbench-menu'),
 		trigger: 'click',
 		closeOnClick: 'body',
 		fade: 200,
 		zIndex:8000,
 		closeOnMouseleave:false,
-		position: { y: 'bottom', x: 'right' },
-		pointer: 'right'
+		position: { y: 'bottom'},
 	});
 
 };

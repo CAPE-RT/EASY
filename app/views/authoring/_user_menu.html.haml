@@ -1,0 +1,19 @@
+%div
+	.user-menu.cursor-pointer
+		%i.fa.fa-user
+		%span.sm-show
+			= current_user.first_name
+		%span.sm-show
+			= current_user.last_name
+#user-menu.display-none.h4.overflow-hidden
+	%div
+		%div
+			%i.fa.fa-inbox
+			Inbox
+		%div
+			%i.fa.fa-edit
+			Edit Profile
+		%div
+			%hr
+		%div
+			= link_to "<i class='fa fa-power-off'></i> Log out".html_safe, log_out_path

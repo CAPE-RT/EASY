@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
+  get 'authoring/index'
   get 'sessions/new'
-
   get 'users/new'
-
   get 'project_select/index'
-
   get 'login/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -18,6 +16,7 @@ Rails.application.routes.draw do
   get "sign_up" => "users#new", :as => "sign_up"
   get "project" => "project_select#index", :as => "project"
   get "dashboard" => "dashboard#index", :as => "dashboard"
+  get "authoring" => "authoring#index", :as => "authoring"
   root :to => "sessions#new"
   resources :users
   resources :sessions
