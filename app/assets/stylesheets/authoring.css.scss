@@ -3,9 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body.controller-authoring, html.controller-authoring {
-	background-color: #FFE0CC;
+	background-color: #c9dbe9;
     height: 100%;
 }
-.authoring-title-bg {
-	background-color: #FF6600;
+
+.authoring-step {
+	max-width: 700px;
+	vertical-align: top;
+}
+
+#step-number {
+	vertical-align: top;
+}
+
+.step-content {
+	vertical-align: top;
+	line-height: 0.9em;
+	font-size: 0.8em;
+}
+
+textarea#step {
+	resize: none;
+	border: none;
+}
+textarea#step:focus {
+    border:1px solid #FF6600;
+    box-shadow: 0 0 10px #719ECE;
 }
