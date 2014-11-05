@@ -8,7 +8,7 @@ body.controller-authoring, html.controller-authoring {
 }
 
 .authoring-step {
-	max-width: 700px;
+	width: 710px;
 	vertical-align: top;
 }
 
@@ -18,15 +18,41 @@ body.controller-authoring, html.controller-authoring {
 
 .step-content {
 	vertical-align: top;
-	line-height: 0.9em;
+	line-height: 1.0em;
 	font-size: 0.8em;
 }
 
-textarea#step {
+textarea.step {
 	resize: none;
 	border: none;
 }
-textarea#step:focus {
+textarea.step:focus {
     border:1px solid #FF6600;
     box-shadow: 0 0 10px #719ECE;
+}
+
+.step { 
+
+}
+.step-fade{
+	background: -webkit-linear-gradient(top,rgba(201,219,233,0),rgba(201,219,233,1)); /*Safari 5.1-6*/
+  	background: -o-linear-gradient(top,rgba(201,219,233,0),rgba(201,219,233,1)); /*Opera 11.1-12*/
+  	background: -moz-linear-gradient(top,rgba(201,219,233,0),rgba(201,219,233,1)); /*Fx 3.6-15*/
+  	background: linear-gradient(to top, rgba(201,219,233,0), rgba(201,219,233,1)); /*Standard*/
+  	height: 30px;
+  	top: 28px;
+}
+.step-right {
+	height: 100%;
+}
+.sortable-arrow {
+	bottom: 0px;
+	right: 5px;
+	cursor: default;
+	float: right;
+}
+.rotate-icon {
+	top: 0px;
+	right: 5px;
+	cursor: default;
 }

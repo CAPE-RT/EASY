@@ -1,11 +1,14 @@
 / page title
 - @title="CAPE{RT}:Authoring"
 / page body
-.clearfix.top-0.bg-mid-gray.white.p1
+.clearfix.step-fade.fixed.full-width.z3
+
+.clearfix.top-0.bg-mid-gray.white.px1.fixed.z4
 	.table.table-fixed
-		.table-cell.left-align.h4.italic
+		.table-cell.left-align.h3.italic
 			%span.sm-show
-				Content Left
+				%i.fa.fa-plus-square
+				%i.fa.fa-folder-open
 			%span.sm-hide 
 				%i.fa.fa-align-justify
 		.table-cell.center.h4.bold
@@ -16,8 +19,10 @@
 		.table-cell.right-align.h4
 			= render partial: "user_menu"
 
-.block.clearfix.absolute-center
-	#step.border.authoring-step.m1.bg-white
+%br/
+%br/
+#sortable.block.clearfix.absolute-center
+	.step.relative.border.authoring-step.m1.bg-white
 		#step-number.table-cell.p1.mid-gray
 			%span.fa-stack.fa-2x
 				%i.fa.fa-circle-thin.fa-stack-2x
@@ -25,8 +30,12 @@
 					1
 		#step-content.table-cell.p1
 			%samp
-				%textarea#step{:cols => "50", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
-	#step.border.authoring-step.m1.bg-white
+				%textarea.step{:cols => "70", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
+		.rotate-icon.absolute.mid-gray
+			%i.fa.fa-rotate-left
+		.sortable-arrow.absolute.mid-gray
+			%i.fa.fa-arrows-v
+	.step.relative.border.authoring-step.m1.bg-white
 		#step-number.table-cell.p1.mid-gray
 			%span.fa-stack.fa-2x
 				%i.fa.fa-circle-thin.fa-stack-2x
@@ -34,8 +43,12 @@
 					2
 		#step-content.table-cell.p1
 			%samp
-				%textarea#step{:cols => "50", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
-	#step.border.authoring-step.m1.bg-white
+				%textarea.step{:cols => "70", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
+		.rotate-icon.absolute.mid-gray
+			%i.fa.fa-rotate-left
+		.sortable-arrow.absolute.mid-gray
+			%i.fa.fa-arrows-v
+	.step.relative.border.authoring-step.m1.bg-white
 		#step-number.table-cell.p1.mid-gray
 			%span.fa-stack.fa-2x
 				%i.fa.fa-circle-thin.fa-stack-2x
@@ -43,8 +56,12 @@
 					3
 		#step-content.table-cell.p1
 			%samp
-				%textarea#step{:cols => "50", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
-	#step.border.authoring-step.m1.bg-white
+				%textarea.step{:cols => "70", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
+		.rotate-icon.absolute.mid-gray
+			%i.fa.fa-rotate-left
+		.sortable-arrow.absolute.mid-gray
+			%i.fa.fa-arrows-v
+	.step.relative.border.authoring-step.m1.bg-white
 		#step-number.table-cell.p1.mid-gray
 			%span.fa-stack.fa-2x
 				%i.fa.fa-circle-thin.fa-stack-2x
@@ -52,8 +69,11 @@
 					4
 		#step-content.table-cell.p1
 			%samp
-				%textarea#step{:cols => "50", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
-
+				%textarea.step{:cols => "70", :class => "step-content"}= "Conduct a pre-task crew briefing discussing the procedure that will be performed which should include crew assignments, overall goal, precautionary measures, and possible hazardous situations. A briefing shall be performed at the beginning of each day, crew shift, or at any time that requires careful attention, whether for a single person or with the entire operations group. Verify instructions are clear and all personel understand the tasks at hand."
+		.rotate-icon.absolute.mid-gray
+			%i.fa.fa-rotate-left
+		.sortable-arrow.absolute.mid-gray
+			%i.fa.fa-arrows-v
 
 
 = render partial: "workbench_menu"
